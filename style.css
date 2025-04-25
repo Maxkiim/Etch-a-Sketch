@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resize-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#grid-container {
+    display: flex;
+    flex-wrap: wrap; /* Will make grids move to the next row once there are 16 grids on the working row */
+    width: 70vw;
+    height: 70vh;
+    border: 1px solid black;
+}
+
+.grid-cell {
+    /* style each cell */
+    box-sizing: border-box;
+    border: 1px solid grey;
+    background-color: lightgray;
+    transition: background-color 0.3s ease; /* makes transition to another color smooth */
+}
+
+.grid-cell:hover {
+    background-color: aqua;
+}
